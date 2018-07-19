@@ -3,6 +3,86 @@
     padding: 0;
     margin: 0;
 }
+
 body {
+    font-size: 20px;
+    font-family: Arial;
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button {
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
+    
+    width: 200px;
+    padding: 10px;
+    
+    background-color: #02ac46;
+    border: 2px solid #02ac46;
+    border-radius: 5px;
+    &:hover {
+        background-color: inherit;
+        color: #02ac46;
+    }
+}
+
+#start-game {
+    display: flex;
+    justify-content: center;
+    margin: 50px 300px;
+}
+
+.panel-game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 300px;
+    text-align: center;
+    border: 2px solid #02ac46;
+    border-radius: 5px;
+    .box {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;
+            width: 50%;
+            font-size: 30px;
+            border-bottom: 2px solid #02ac46;
+            color: #02ac46;
+        }
+    }
+    .data {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        #round, #result {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            width: 50%;
+            font-size: 25px;
+        }
+    }
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 300px;
+}
+
+#output {
+    margin: 0 300px;
     text-align: center;
 }
