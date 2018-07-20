@@ -30,6 +30,8 @@ button {
         background-color: inherit;
         color: #02ac46;
     }
+    
+    cursor: pointer;
 }
 
 #start-game {
@@ -42,7 +44,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 300px;
+    margin: 0 300px 50px 300px;
     text-align: center;
     border: 2px solid #02ac46;
     border-radius: 5px;
@@ -59,6 +61,13 @@ button {
             font-size: 30px;
             border-bottom: 2px solid #02ac46;
             color: #02ac46;
+        }
+        .players {
+            flex-direction: column;
+            #players-name {
+                display: flex;
+                flex-direction: row;
+            }
         }
     }
     .data {
@@ -79,10 +88,10 @@ button {
 #buttons {
     display: flex;
     justify-content: space-around;
-    margin: 50px 300px;
+    margin: 0 300px;
 }
 
 #output {
-    margin: 0 300px;
+    margin: 50px 300px 0 300px;
     text-align: center;
 }

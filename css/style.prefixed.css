@@ -27,6 +27,7 @@ button {
   background-color: #02ac46;
   border: 2px solid #02ac46;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 button:hover {
@@ -49,7 +50,7 @@ button:hover {
       flex-direction: column;
   -ms-flex-pack: center;
       justify-content: center;
-  margin: 0 300px;
+  margin: 0 300px 50px 300px;
   text-align: center;
   border: 2px solid #02ac46;
   border-radius: 5px;
@@ -77,6 +78,18 @@ button:hover {
   color: #02ac46;
 }
 
+.panel-game .box .players {
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.panel-game .box .players #players-name {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
 .panel-game .data {
   display: -ms-flexbox;
   display: flex;
@@ -102,11 +115,11 @@ button:hover {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 50px 300px;
+  margin: 0 300px;
 }
 
 #output {
-  margin: 0 300px;
+  margin: 50px 300px 0 300px;
   text-align: center;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
